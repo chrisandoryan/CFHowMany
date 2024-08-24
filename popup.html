@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h2>How Many Times Do You Visit CF-protected Website?</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Domain</th>
+        <th>First Visit</th>
+        <th>Last Visit</th>
+        <th>Visit Count</th>
+        <th>Referrer</th>
+      </tr>
+    </thead>
+    <tbody id="cloudflareData"></tbody>
+  </table>
+
+  <button id="downloadCsv">Download CSV</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
